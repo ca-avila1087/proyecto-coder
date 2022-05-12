@@ -1,22 +1,23 @@
-<!-- proyecto final de coder house Carlos Avila -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño instruccional Carlos Avila</title>
+    <title>Diseño instruccional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
  
-  <!-- sección del Navbar-->
+  <section class="nabvar">
+  <!-- Navbar-->
 
- <!--<nav class="navbar navbar-expand-sm bg-primary navbar-dark">-->
- <nav class="navbar navbar-light" style="background-color: #55CBCD;">
+  <!--<nav class="navbar navbar-expand-sm bg-primary navbar-dark">-->
+    <!--<               cambia tamano   cambia text Cambia fondo   style="background-color: #BBBAFF;" >-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-image: Linear-gradient(to right, #F4FDB1 , #00d4ff)"; >
+      <!--<nav class="navbar navbar-light" style="background-color: #e3f2fd;">-->
  <div class="container">
    <a href="#" class="navbar-brand">Instructional design</a>
 
@@ -34,7 +35,7 @@
   <ul class="navbar-nav ms-auto">
 
     <li class="nav-item">
-      <a href="#learn" class="nav-link">What you will learn</a>
+      <a href="#card" class="nav-link">What you will learn</a>
     </li>
 
     <li class="nav-item">
@@ -45,35 +46,47 @@
       <a href="#instructors" class="nav-link">Instructors</a>
     </li>
 
+    <li class="nav-item">
+      <a href="#FAQs" class="nav-link">FAQs</a>
+    </li>
+
   </ul>
 </div>
  </div>
-    
+</section>
   </nav>    
 
-   <!-- sección del showcase-->
+  <section class="showcase">
+   <!-- showcase-->
 
-   <section class="style="background-color:#FFFFD1 text-light p-3 p-lg-0 text-center text-sm-start">
+   <section class=" text-light p-3 p-lg-0 text-center text-sm-start">
      <div class="container">
        <div class="d-sm-flex align-items-center justify-content-between">
          <div>
            <h1>Experts in learning solutions</h1>
-           <p class="lead my-5">
+           <p class="lead my-5 p-3">
+
              We are a team of different experts that will support our cotumers e-learning experiences,
              focusing on your companies needs and learning experiences
 
            </p>
-<button class="btn btn-primary btn-lg">learn more about us</button>
+          
 
+            <!--<button type="button" class="btn btn-outline-warning">learn more about us</button>-->
+            <a href="#learn" class="btn-group-toggle  btn-primary btn-lg">learn more about us</button>
+            </a>
+         
           </div>
-         <img class="img-fluid w-50" src="img/what-is-online-tutoring-1.png" alt="imagen de computador con persona de fondo">
+         <img class="img-fluid w-50 p-4" src="img/what-is-online-tutoring-1.png" alt="imagen de computador con persona de fondo">
        </div>
      </div>
    </section>
+  </section>
 
- <!-- sección de let us contact you-->
+  <section class="letUs">
+ <!-- let us contact you-->
 
- <section class="bg-secondary text-light p-4"> 
+ <section class=" text-light p-4"> 
    <div class="container">
 <div class="d-md-flex justify-content-between align-items-center">
 
@@ -90,10 +103,13 @@
 
  </section>
 
-  <!-- sección de Cards and boxes-->
+</section>
+
+<section class="card">
+  <!-- Cards and boxes-->
 
    <!-- Boxes -->
-   <section class="p-5">
+   <section section id="card" class="p-5">
     <div class="container">
       <div class="row text-center g-4">
         <div class="col-md">
@@ -141,9 +157,11 @@
       </div>
     </div>
   </section>
+</section>
 
-   <!-- sección Learning -->
-   <section id="learn" class="p-5 bg-dark text-light">
+<section class="learning">
+   <!-- Learning -->
+   <section id="learn" class="p-5  text-light">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
@@ -157,15 +175,23 @@
           <p>
             We have developed a strong team, that will be able to support your buissness learning requeriments
           </p>
-          <a href="#" class="btn btn-light mt-3">
-            <i class="bi bi-chevron-right"></i> Read More
+          <a href="#" class="position-absolute bottom-5 end-0 p-1">
+            <i class="bi bi-arrow-up-circle h1"></i>
           </a>
+          </a>
+          
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="learn" class="p-4 bg-primary text-light">
+        
+      </div>
+
+      
+    </div>
+
+    
+  </section>
+  <section class="scorm">
+  <section id="learn" class="p-4  text-light">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
@@ -174,6 +200,7 @@
             Developing content acording to your buissness needs, for internal training in different fields.
             SMEs develop the best strategies for your internal company grouth
           </p>
+          
           <p>
            adaptative solutions for your buissness needs
           </p>
@@ -187,8 +214,19 @@
       </div>
     </div>
   </section>
+</section>
+</section>
+<section class="question">
 
-   <!--  sección de preguntas Question Accordion -->
+  <a href="#" class="position-absolute bottom-5 end-0 p-1">
+    <i class="bi bi-arrow-up-circle h1"></i>
+  </a>
+
+
+
+
+   <!-- Question Accordion -->
+<section section id="FAQs" class="questions">
    <section id="questions" class="p-5">
     <div class="container">
       <h2 class="text-center mb-4">Frequently Asked Questions</h2>
@@ -278,11 +316,19 @@
           >
             <div class="accordion-body">
               we have a 24 hour contact policy
+              
             </div>
+           
           </div>
         </div>
 
-         <!-- sección de Contact & Map -->
+        
+      </section>
+    </section>
+  </section>
+
+  <section class="contact">
+         <!-- Contact & Map -->
     
     <section id="contact" class="p-3">
       <div class="container">
@@ -301,20 +347,79 @@
                 <span class="fw-bold">Enrollment Email:</span> (555)
                 aaaaa@dory.memo
               </li>
-              
+              <div class="col-md">
+                <img src="img/Contact-us.png" class="img-fluid" alt="" />
+              </div>
+
             </ul>
           </div>
           <div class="col-md">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.896202206421!2d151.3247281151309!3d-33.504077580758654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b72b4ab57e42ba5%3A0x2f3b5643235924fc!2s42%20Wallaby%20St%2C%20Blackwall%20NSW%202256%2C%20Australia!5e0!3m2!1ses-419!2sca!4v1649112294207!5m2!1ses-419!2sca" width="260" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.896202206421!2d151.3247281151309!3d-33.504077580758654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b72b4ab57e42ba5%3A0x2f3b5643235924fc!2s42%20Wallaby%20St%2C%20Blackwall%20NSW%202256%2C%20Australia!5e0!3m2!1ses-419!2sca!4v1649112294207!5m2!1ses-419!2sca" width="100%" height="100%" style="border: 10px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
           </div>
         </div>
       </div>
     </section>
+  </section>
+<!--instructors-->
 
+<section class="instructors">
+
+
+<section section id="instructors" class="p-5">
+  <div class="container">
+    <div class="row text-center g-4">
+      
+
+      <div class="card" style="width: 20rem;">
+        
+        <img src="img/instructor.jpg" class="card-img-top" alt="technical instructor">
+        <div class="card-body">
+          <h5 class="card-title">MR. Seba</h5>
+          <p class="card-text">Techincal intructor with lot of knowledge.</p>
+          <a href="#" class="btn btn-primary">about</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <img src="img/bill.jpeg" class="card-img-top" alt="Instructor Bill">
+        <div class="card-body">
+          <h5 class="card-title">MR. Bill</h5>
+          <p class="card-text">Techincal intructor with lot of knowledge</p>
+          <a href="#" class="btn btn-primary">about</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <img src="img/instructor3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MRs Rosita</h5>
+          <p class="card-text">Techincal intructor with lot of knowledge</p>
+          <a href="#" class="btn btn-primary">about</a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 21rem;">
+        <img src="img/instructor2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MR. Presi</h5>
+          <p class="card-text">Techincal intructor with lot of knowledge</p>
+          <a href="#" class="btn btn-primary">about</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+</section>
+
+</section>
+
+  <section class="footer">
 <!-- Footer -->
 
-<footer class="p-1 bg-primary text-white text-center position-relative">
+<footer class="p-1  text-dark text-center position-relative">
   <div class="container">
     <p class="lead">All rights reserved &copy; 2022 Compumundohipermegared</p>
 
@@ -323,11 +428,14 @@
     </a>
   </div>
 </footer>
-
+</section>
  <header> 
         
          
      </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
 </html>
